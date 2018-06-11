@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boilerplate Game</title>
+
+    <!--JS Files-->
+    <script src="http://cdn.jsdelivr.net/npm/phaser@3.9.0/dist/phaser.js"></script>
+
+    <!-- game files -->
+    <script src="js/GlobalVariables.js"></script>
+    <script src="js/Preload.js"></script>
+    <script src="js/MainMenu.js"></script>
+    <script src="js/GamePlay.js"></script>
+
+</head>
+<body>
+    <script>
+        // On page load, create game config
+        var config = {
+            type: Phaser.AUTO,
+            width: 640,
+            height: 480,
+            scene: myGame.scenes,
+        };
+
+        var game = new Phaser.Game(config);
+    </script>
+    
+</body>
+</html>
