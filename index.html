@@ -21,8 +21,15 @@
         // On page load, create game config
         var config = {
             type: Phaser.AUTO,
-            width: 640,
-            height: 480,
+            width: myGame.width,
+            height: myGame.height,
+            physics: {
+                default: 'arcade',
+                arcade: {
+                    gravity: {y: 500},
+                    debug: false
+                }
+            },
             scene: myGame.scenes,
         };
 
