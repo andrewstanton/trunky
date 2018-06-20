@@ -4,12 +4,19 @@ var myGame = {
     scenes: [],
 
     // Tilemap
-    tilesize: 32,
+    tilesize: 16,
 
     // Define common framerate to be referenced in animations
     frameRate: 10,
 
     // Game screen
-    width: 640,
-    height: 480,
+    width: 600,
+    height: 400,
+
+    levels: [
+        {
+            twidth: 100,
+            theight: 25,
+        },
+    ]
 };
